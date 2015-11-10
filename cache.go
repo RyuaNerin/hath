@@ -32,7 +32,7 @@ var (
 
 var (
 	// FileTypes list for allowerd images
-	FileTypes = []string{"jpg", "png", "gif"}
+	FileTypes = []string{"jpg", "png", "gif", "wmb"}
 	// FileTypesN count of FileTypes
 	FileTypesN = len(FileTypes)
 )

@@ -774,7 +774,9 @@ func (s *DefaultServer) refreshSettings() error {
 func (s *DefaultServer) commandProxyTest(c *gin.Context, args Args) {
 	// parsing arguments
 	ip := net.ParseIP(args.Get(argIP))
-	port := args.GetInt(argPort)
+	if port == 0 {
+		port := args.GetInt(argPort)
+	}
 	fileID := args.Get(argFileID)
 	keystamp := args.Get(argKeystamp)
 

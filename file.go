@@ -102,6 +102,9 @@ func (f FileType) String() string {
 	if f == GIF {
 		return "gif"
 	}
+	if f == WMB {
+		return "wmb"
+	}
 	return "tmp"
 }
 
@@ -112,6 +115,8 @@ const (
 	PNG
 	// GIF animation
 	GIF
+	// WEBM (1.2.6 added)
+	WMB
 	// UnknownImage is not supported format
 	UnknownImage
 )
@@ -122,6 +127,7 @@ var (
 		JPG:          "image/jpeg",
 		PNG:          "image/png",
 		GIF:          "image/gif",
+		WMB:          "video/webm",
 		UnknownImage: "application/octet-stream",
 	}
 )

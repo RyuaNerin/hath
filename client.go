@@ -17,8 +17,8 @@ import (
 )
 
 const (
-	clientVersion = "1.2.25"
-	clientBuild   = 96
+	clientVersion = "1.2.6"
+	clientBuild   = 98
 
 	clientAPIHost   = "rpc.hentaiathome.net"
 	clientAPIScheme = "http"
